@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medienos projektas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="block-wrapper">
+    <h1>Medienos skaičiuoklė</h1>
+  </header>
+  <div class="info-wrapper block-wrapper">
+    <h2>Pradinė informacija</h2>
+    <div class="input-wrapper">
+      <label for="lentosIlgis">Lentos ilgis (m):</label>
+      <input type="number" min="0" step="1" value="0"  id="lentosIlgis">
+      <span class="error">Skaičius negali būti neigiamas.</span>
+    </div>
+    <div class="input-wrapper">
+      <label for="lentosPlotis">Lentos plotis (m):</label>
+      <input type="number" min="0" step="1" value="0"  id="lentosPlotis">
+      <span class="error">Skaičius negali būti neigiamas.</span>
+    </div>
+    <div class="input-wrapper">
+      <label for="lentosGylis">Lentos gylis (m):</label>
+      <input type="number" min="0" step="1" value="0"  id="lentosGylis">
+      <span class="error">Skaičius negali būti neigiamas.</span>
+    </div>
+    <div class="input-wrapper">
+      <label for="lentosSkaicius">Lentų skaičius:</label>
+      <input type="number" min="0" step="1" value="0"  id="lentosSkaicius">
+      <span class="error">Skaičius negali būti neigiamas.</span>
+    </div>
+    <button onclick="skaiciuoti()">Skaičiuoti</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+  <div class="calc-wrapper block-wrapper">
+    <h2>Skaičiavimai</h2>
+    <div class="results">
+      <p>Pasirinkite norimus kiekius lentų.</p>
+    </div>
+  </div>
+</body>
+</html>
